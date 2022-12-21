@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.allPage {
+  height: 100vh;
+  width: 100vw;
+  background-color: #56AA3F;
+  display: flex;
+  flex-direction: column;
+  color: #EBEAEB;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftHeader {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rightHeader {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: 3px;
+}
+
+.againButton {
+  outline: none;
+  border: none;
+  background-color: #EBEAEB;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 24px 72px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.againButton:hover {
+  background-color: #c9c9c9;
+}
+
+.infoSpan {
+  font-size: 24px;
+  padding: 24px 0;
+  box-sizing: border-box;
+}
+
+.gameName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.gameNameSpan {
+  font-size: 56px;
+  letter-spacing: 10px;
+}
+
+.randomNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  box-sizing: border-box;
+  border-bottom: 10px solid #EBEAEB;
+}
+
+.randomNumberSpan {
+  font-size: 56px;
+  letter-spacing: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  padding: 30px 0;
+  box-sizing: border-box;
+  background-color: #EBEAEB;
+  position: absolute;
+  bottom: 63%;
+  right: 40%;
+  border-radius: 5px;
+  color: black;
+}
+
+.gameArea {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.numberArea {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.numberInput {
+  background-color: #56AA3F;
+  outline: none;
+  padding: 48px 72px;
+  box-sizing: border-box;
+  width: 33%;
+  border: 6px solid #EBEAEB;
+  font-size: 36px;
+}
+
+.numberButton {
+  width: 25%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background-color: #EBEAEB;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.infoArea {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.numberInfoDiv {
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 0 0 50px 0;
+  box-sizing: border-box;
+}
+
+.scoreDiv,
+.highScoreDiv {
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1200px) {
+  .numberInfoDiv {
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 50px;
+  }
+
+  .scoreDiv,
+.highScoreDiv {
+  font-size: 24px;
+  letter-spacing: 0;
+}
+
+.gameNameSpan {
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+.againButton {
+  padding: 18px 36px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.infoSpan {
+  font-size: 16px;
+}
+
+.randomNumberSpan {
+  font-size: 28px;
+  padding: 30px 0;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 67%;
+  right: 40%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .numberInfoDiv {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .scoreDiv,
+.highScoreDiv {
+  font-size: 14px;
+}
+
+.gameNameSpan {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.againButton {
+  padding: 18px 36px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.infoSpan {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.randomNumberSpan {
+  font-size: 28px;
+  padding: 30px 0;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 67%;
+  right: 40%;
+}
+
+.numberButton {
+  max-width: 25%;
+  font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .numberArea {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .infoArea {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .numberInfoDiv {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 0 0 10px 0;
+    box-sizing: border-box;
+  }
+
+  .scoreDiv,
+.highScoreDiv {
+  font-size: 10px;
+}
+
+.gameNameSpan {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.againButton {
+  padding: 12px 18px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.infoSpan {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.randomNumberSpan {
+  font-size: 24px;
+  bottom: 63%;
+  right: 40%;
+  letter-spacing: 0;
+}
+
+.numberButton {
+  padding: 20px 50px;
+  max-width: 25%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
